@@ -13,7 +13,7 @@ Now, if you have 6 categories, this would be all of them. By default, 'Uncategor
 Here is where we call the function. So while we run **portf_list** function, for each  
 item in the array **$displayCats**, we're creating a variable **$cat**. Then the **article_category_id** function scans all the categories checks for the ID AKA **$cat**. If **$cat** is indeed an ID for a category, it will call return the posts from that category in the structure within. 
 
-In this little tidbit below you can see I have am creating a **li**st item for each post that is returned. In this case, it will return the title of the post, which is linked to the post. And below the post title will be the description, if one is filled out.
+In this little tidbit below you can see I have am creating a **li**st item for each post that is returned. In this case, it will return the title of the post, which is linked to the post. And below the post title will be the description, if one is filled out. View it in action over at [my blog](http://coletownsend.com/posts).
 
 	<?php while(portf_list()): ?>
       <?php foreach($displayCats as $cat): ?>
