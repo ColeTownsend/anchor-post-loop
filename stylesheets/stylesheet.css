@@ -130,8 +130,8 @@ a:visited {
 }
 
 #main_content a:hover {
-  color: #0069ba;
-  text-shadow: #0090ff 0px 0px 2px;
+  color: #4a4a4a;
+  text-decoration: none;
 }
 
 footer a:hover {
