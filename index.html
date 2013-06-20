@@ -49,7 +49,7 @@
 <p>Here is where we call the function. So while we run <strong>portf_list</strong> function, for each<br>
 item in the array <strong>$displayCats</strong>, we're creating a variable <strong>$cat</strong>. Then the <strong>article_category_id</strong> function scans all the categories checks for the ID AKA <strong>$cat</strong>. If <strong>$cat</strong> is indeed an ID for a category, it will call return the posts from that category in the structure within. </p>
 
-<p>In this little tidbit below you can see I have am creating a <strong>li</strong>st item for each post that is returned. In this case, it will return the title of the post, which is linked to the post. And below the post title will be the description, if one is filled out.</p>
+<p>In this little tidbit below you can see I have am creating a <strong>li</strong>st item for each post that is returned. In this case, it will return the title of the post, which is linked to the post. And below the post title will be the description, if one is filled out. See it in action at <a target="_blank" href="http://coletownsend.com/posts"</p>
 
 <pre><code>&lt;?php while(portf_list()): ?&gt;
   &lt;?php foreach($displayCats as $cat): ?&gt;
