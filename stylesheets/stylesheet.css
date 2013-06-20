@@ -324,6 +324,8 @@ Full-Width Styles
   text-align: center;
   color: rgb(68,79,95);
   background: white;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .tar_download_link {
@@ -335,7 +337,9 @@ Full-Width Styles
   text-align: center;
   color: rgb(68,79,95);
   background: white;
-  margin-left: 10px;
+  margin-left: 40px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 #main_content_wrap {
