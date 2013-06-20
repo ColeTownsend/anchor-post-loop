@@ -55,14 +55,14 @@ function portf_list() {
 <!-- This is the HTML portion, it might go within a <body> tag or whatever -->
 
 <?php while(portf_list()): ?>
-                        <?php foreach($displayCats as $cat): ?>
-                            <?php if(article_category_id() == $cat): ?>
-                              <!-- Here Goes Whatever your want each item to display. I currently use list items but you could forseeably use divs, table items, or flexbox children.
-                              <li>
-                                <a href="<?php echo article_url(); ?>"><h1 class="case-title"><?php echo article_title(); ?></h1></a>
-                                <p class=""><?php echo article_description(); ?></p>
-                              </li>
-                              -->
-                              <?php endif; ?>
-                        <?php endforeach; ?>
-                    <?php endwhile; ?>
+    <?php foreach($displayCats as $cat): ?>
+        <?php if(article_category_id() == $cat): ?>
+          <!-- Here Goes Whatever your want each item to display. I currently use list items but you could forseeably use divs, table items, or flexbox children.
+          <li>
+            <a href="<?php echo article_url(); ?>"><h1 class="case-title"><?php echo article_title(); ?></h1></a>
+            <p class=""><?php echo article_description(); ?></p>
+          </li>
+          -->
+          <?php endif; ?>
+    <?php endforeach; ?>
+<?php endwhile; ?>
