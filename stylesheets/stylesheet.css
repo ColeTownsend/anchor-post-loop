@@ -167,21 +167,17 @@ pre, code {
 }
 
 pre {
-  width: 100%;
+  width: 100% !important;
   padding: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  box-shadow: 0 0 1px rgba(0,0,0,.3), inset 0 2px 2px rgba(0,0,0,.1);
   overflow: auto;
+  display: block;
 }
 
 code {
   padding: 3px;
   margin: 0 3px;
   box-shadow: 0 0 10px rgba(0,0,0,.1);
-}
-
-pre code {
-  display: block;
-  box-shadow: none;
 }
 
 blockquote {
