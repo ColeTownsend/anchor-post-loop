@@ -325,7 +325,6 @@ Full-Width Styles
   background: white;
   font-weight: bold;
   text-decoration: none;
-  margin-right: 20px;
 }
 
 .tar_download_link {
@@ -337,6 +336,12 @@ Full-Width Styles
   text-align: center;
   color: rgb(68,79,95);
   background: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.tar_download_link a, .zip_download_link a {
   font-weight: bold;
   text-decoration: none;
 }
