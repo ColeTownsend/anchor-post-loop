@@ -106,6 +106,10 @@ footer p {
   color: #fafafa;
 }
 
+footer a, footer a:visited {
+  color: #fafafa;
+}
+
 a {
   text-decoration: underline;
   text-shadow: none;
