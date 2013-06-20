@@ -118,7 +118,7 @@ a {
 }
 
 a:visited {
-  color: rgba(255,255,255,0.7)
+  opacity: .8;
 }
 
 #main_content a:hover {
