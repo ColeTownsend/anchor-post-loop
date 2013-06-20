@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="anchor-post-loop : Anchor Post Loop" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>anchor-post-loop</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/ColeTownsend/anchor-post-loop">View on GitHub</a>
+
+          <h1 id="project_title">anchor-post-loop</h1>
+          <h2 id="project_tagline">Anchor Post Loop</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/ColeTownsend/anchor-post-loop/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/ColeTownsend/anchor-post-loop/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="the-post-loop" class="anchor" href="#the-post-loop"><span class="octicon octicon-link"></span></a>The Post Loop</h1>
+
+<p>This is a simple post loop for anchor. You can use it on any page. Not all of this code is mine, most of it I gleaned from the Anchor Forums but I've changed a few things and wanted to share it here.</p>
+
+<p>First we create a variable. I called it 'displayCats'. It's actually an array, which can contain several items. We want it to contain the IDs for the categories we want in this loop.</p>
+
+<pre><code>$displayCats = array(1,2,3,4,5,6)
+</code></pre>
+
+<p>Now, if you have 6 categories, this would be all of them. By default, 'Uncategorized' is the first category. There is no '0' category, so don't try and call it.</p>
+
+<h2>
+<a name="the-html-stuff--eli5" class="anchor" href="#the-html-stuff--eli5"><span class="octicon octicon-link"></span></a>The HTML Stuff — ELI5</h2>
+
+<p>Here is where we call the function. So while we run <strong>portf_list</strong> function, for each<br>
+item in the array <strong>$displayCats</strong>, we're creating a variable <strong>$cat</strong>. Then the <strong>article_category_id</strong> function scans all the categories checks for the ID AKA <strong>$cat</strong>. If <strong>$cat</strong> is indeed an ID for a category, it will call return the posts from that category in the structure within. </p>
+
+<p>In this little tidbit below you can see I have am creating a <strong>li</strong>st item for each post that is returned. In this case, it will return the title of the post, which is linked to the post. And below the post title will be the description, if one is filled out.</p>
+
+<pre><code>&lt;?php while(portf_list()): ?&gt;
+  &lt;?php foreach($displayCats as $cat): ?&gt;
+      &lt;?php if(article_category_id() == $cat): ?&gt;
+        &lt;!-- Here Goes Whatever your want each item to display. 
+        I currently use list items but you could forseeably use divs, table items, or flexbox goodies.
+        &lt;li&gt;
+          &lt;a href="&lt;?php echo article_url(); ?&gt;"&gt;
+          &lt;h1 class="case-title"&gt;&lt;?php echo article_title(); ?&gt;&lt;/h1&gt;
+          &lt;/a&gt;
+          &lt;p class="case-deets"&gt;&lt;?php echo article_description(); ?&gt;&lt;/p&gt;
+        &lt;/li&gt;
+        --&gt;
+        &lt;?php endif; ?&gt;
+  &lt;?php endforeach; ?&gt;
+&lt;?php endwhile; ?&gt;
+</code></pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">anchor-post-loop maintained by <a href="https://github.com/ColeTownsend">ColeTownsend</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
