@@ -322,7 +322,7 @@ Full-Width Styles
 
 #downloads {
   position: relative;
-  width: 240px;
+  width: 300px;
   z-index: 10;
   text-align: center;
   display: block;
@@ -347,7 +347,7 @@ Full-Width Styles
 
 .tar_download_link {
   display: block;
-  float: right;
+  float: left;
   width: auto;
   border-radius: 4px;
   padding: 8px 32px;
