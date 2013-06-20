@@ -346,6 +346,12 @@ Full-Width Styles
   text-decoration: none;
 }
 
+.downloads {
+  height: 80px;
+  background: rgb(68,79,95);
+  width: 100%;
+}
+
 #main_content_wrap {
   background: #f3f0f0;
   border-top: 1px solid #d2d2d2;
