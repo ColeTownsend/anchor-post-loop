@@ -106,20 +106,14 @@ footer p {
 }
 
 a {
-  text-decoration: none;
-  color: #007edf;
+  text-decoration: underline;
   text-shadow: none;
-
-  transition: color 0.5s ease;
-  transition: text-shadow 0.5s ease;
-  -webkit-transition: color 0.5s ease;
-  -webkit-transition: text-shadow 0.5s ease;
-  -moz-transition: color 0.5s ease;
-  -moz-transition: text-shadow 0.5s ease;
-  -o-transition: color 0.5s ease;
-  -o-transition: text-shadow 0.5s ease;
-  -ms-transition: color 0.5s ease;
-  -ms-transition: text-shadow 0.5s ease;
+  padding-bottom: 1px
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
 }
 
 #main_content a:hover {
@@ -128,8 +122,7 @@ a {
 }
 
 footer a:hover {
-  color: #43adff;
-  text-shadow: #0090ff 0px 0px 2px;
+  text-decoration: none;
 }
 
 em {
