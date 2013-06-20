@@ -290,6 +290,14 @@ Full-Width Styles
 
 #header_wrap {
   background-image: url(/content/anchor-cms.svg.svg);
+  width: 100%;
+  height: 300px;
+  background-position: center center;
+  background-size: cover;
+  vertical-align: middle;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 #header_wrap .inner {
