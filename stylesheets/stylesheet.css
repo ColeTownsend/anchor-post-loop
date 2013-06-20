@@ -305,13 +305,22 @@ Full-Width Styles
   text-shadow: #111 0px 0px 10px;
 }
 
+.downloads {
+  height: 80px;
+  background: rgb(68,79,95);
+  width: 100%;
+}
+
 #downloads {
-  position: absolute;
-  width: 320px;
+  position: relative;
+  width: 240px;
+  top: 50%;
   z-index: 10;
-  bottom: -40px;
-  right: -40px;
-  height: 70px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  height: 20px;
+  padding: 20px;
 }
 
 .zip_download_link {
@@ -344,12 +353,6 @@ Full-Width Styles
 .tar_download_link a, .zip_download_link a {
   font-weight: bold;
   text-decoration: none;
-}
-
-.downloads {
-  height: 80px;
-  background: rgb(68,79,95);
-  width: 100%;
 }
 
 #main_content_wrap {
