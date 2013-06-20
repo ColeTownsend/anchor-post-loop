@@ -318,7 +318,8 @@ Full-Width Styles
   text-align: center;
   display: block;
   margin: 0 auto;
-  padding: 20px;
+  height: 40px;
+  padding-top: 18px;
 }
 
 .zip_download_link {
