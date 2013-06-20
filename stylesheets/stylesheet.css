@@ -167,6 +167,11 @@ pre {
   display: block;
 }
 
+code {
+  padding: 3px;
+  margin: 0 3px;
+}
+
 blockquote {
   color: #666;
   margin-bottom: 20px;
