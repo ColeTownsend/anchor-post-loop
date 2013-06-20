@@ -102,6 +102,10 @@ p {
   margin: 10px 0 15px 0;
 }
 
+p > a {
+  color: #4a4a4a;
+}
+
 footer p {
   color: #fafafa;
 }
