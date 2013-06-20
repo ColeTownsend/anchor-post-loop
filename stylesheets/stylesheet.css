@@ -55,7 +55,7 @@ Theme Styles
 body {
   box-sizing: border-box;
   color:#4a4a4a;
-  background: #212121;
+  background: rgb(68,79,95);
   font-size: 18px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
