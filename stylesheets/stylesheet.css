@@ -307,10 +307,10 @@ Full-Width Styles
 
 #downloads {
   position: absolute;
-  width: 210px;
+  width: 320px;
   z-index: 10;
   bottom: -40px;
-  right: 0;
+  right: -40px;
   height: 70px;
 }
 
@@ -319,12 +319,13 @@ Full-Width Styles
   float: right;
   width: auto;
   border-radius: 4px;
-  padding: 4px 24px;
+  padding: 8px 32px;
   text-align: center;
   color: rgb(68,79,95);
   background: white;
   font-weight: bold;
   text-decoration: none;
+  margin-right: 20px;
 }
 
 .tar_download_link {
@@ -332,11 +333,10 @@ Full-Width Styles
   float: right;
   width: auto;
   border-radius: 4px;
-  padding: 4px 24px;
+  padding: 8px 32px;
   text-align: center;
   color: rgb(68,79,95);
   background: white;
-  margin-left: 40px;
   font-weight: bold;
   text-decoration: none;
 }
