@@ -1,7 +1,7 @@
 The Post Loop
 ================
 
-This is a simple post loop for anchor. You can use it on any page. Not all of this code is mine, some of it I gleaned from the Anchor Forums but I've changed a few things and wanted to share it here.
+This is a simple post loop for anchor. You can use it on any page. Not all of this code is mine, most of it I gleaned from the Anchor Forums but I've changed a few things and wanted to share it here.
 
 First we create a variable. I called it 'displayCats'. It's actually an array, which can contain several items. We want it to contain the IDs for the categories we want in this loop.
 
