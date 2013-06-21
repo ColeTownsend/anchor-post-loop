@@ -274,14 +274,15 @@ Full-Width Styles
 #forkme_banner {
   display: block;
   position: absolute;
-  top:0;
-  right: 10px;
+  top: 0;
+  right: 0;
   z-index: 10;
-  padding: 10px 50px 10px 10px;
-  color: #fff;
-  background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #4a4a4a;
+  background: #fff;
   font-weight: 700;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  box-shadow: 0 2px 2px rgba(0,0,0,.1);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
