@@ -5,7 +5,7 @@
   // For instance http://mydomain.com/admin/categories/edit/4 would be the editing page for Category ID 4 — which happens to be posts from my 'Portfolio' category.
   // If you want to call multiple categories, you can change it to array(4,5,6) or whatever other ID's you want to include.
 
-  $displayCats = array(4);
+  $displayCats = array(1,2,3,4,5);
 
   function article_category_id() {
     if($category = Registry::prop('article', 'category')) {
@@ -14,7 +14,7 @@
     }
   }
 
-function portf_list() {
+function post_list() {
   // only run on the first call
   if( ! Registry::has('rwar_post_archive')) {
     // capture original article if one is set
@@ -54,7 +54,7 @@ function portf_list() {
 
 <!-- This is the HTML portion, it might go within a <body> tag or whatever -->
 
-<?php while(portf_list()): ?>
+<?php while(post_list()): ?>
     <?php foreach($displayCats as $cat): ?>
         <?php if(article_category_id() == $cat): ?>
           <!-- Here Goes Whatever your want each item to display. I currently use list items but you could forseeably use divs, table items, or flexbox children.
